@@ -1,0 +1,19 @@
+PRATIKA CREATION — SUPABASE CONNECTED
+
+Already configured:
+Project URL: https://phlhgfvqlrhkjdikawjg.supabase.co
+Bucket: product-media
+Frontend uses the publishable key only (never a secret/service-role key).
+
+DEPLOY:
+1. Replace the current GitHub website files with the contents of this folder.
+2. Keep index.html and assets/ together at the repository root used by Vercel.
+3. Commit/push. Vercel should redeploy automatically.
+4. Open the live site, click the lock icon, and log in with the Supabase admin email/password you created.
+5. On the first successful admin login, if the products table is empty, the 27 original bundled products are copied into Supabase automatically.
+6. After that, edits/add/delete operations are stored in Supabase and appear on all devices.
+7. New image/video uploads go to the public product-media bucket. Only authenticated admin users with your RLS policies can write/delete.
+
+IMPORTANT:
+- Do not add a secret/service_role key to index.html.
+- Existing 27 media files stay bundled under assets/. New uploads use Supabase Storage.
